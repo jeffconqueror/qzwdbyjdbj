@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图集</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    navbar-brand:hover {
+      color: red;
+    }
+
+    .section1 {
+      margin: 0;
+      padding: 0;
+      font-family: "montserrat";
+      background-image: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+      background-size: 400%;
+      animation: bganimation 10s infinite;
+    }
+
+    @keyframes bganimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+    .phy {
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      position: relative;
+      animation: myrotate 5s infinite;
+      animation-timing-function: linear;
+
+    }
+
+    .phy:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes myrotate {
+      from {
+        transform: rotateZ(0deg)
+      }
+
+      to {
+        transform: rotateZ(360deg)
+      }
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    section.section:last-child {
+      margin-bottom: 0;
+    }
+
+    section.section h2 {
+      margin-bottom: 40px;
+      font-family: "Roboto Slab", serif;
+      font-size: 30px;
+    }
+
+    section.section p {
+      margin-bottom: 40px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    section.section p:last-child {
+      margin-bottom: 0;
+    }
+
+    section.section.content {
+      padding: 40px 0;
+    }
+
+    section.section.parallax {
+      height: 600px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    section.section.parallax h1 {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 48px;
+      line-height: 600px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    section.section.parallax-1 {
+      background-image: url("http://picsum.photos/1600/600");
+    }
+
+    section.section.parallax-2 {
+      background-image: url("http://picsum.photos/1600/600");
+    }
+
+    section.section.parallax-3 {
+      background-image: url("http://picsum.photos/1600/600");
+    }
+
+    @media all and (min-width: 600px) {
+      section.section h2 {
+        font-size: 42px;
+      }
+
+      section.section p {
+        font-size: 20px;
+      }
+
+      section.section.parallax h1 {
+        font-size: 96px;
+      }
+    }
+
+    @media all and (min-width: 960px) {
+      section.section.parallax h1 {
+        font-size: 160px;
+      }
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    section.section:last-child {
+      margin-bottom: 0;
+    }
+
+    section.section h2 {
+      margin-bottom: 40px;
+      font-family: "Roboto Slab", serif;
+      font-size: 30px;
+    }
+
+    section.section p {
+      margin-bottom: 40px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    section.section p:last-child {
+      margin-bottom: 0;
+    }
+
+    section.section.content {
+      padding: 40px 0;
+    }
+
+    section.section.parallax {
+      height: 600px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    section.section.parallax h1 {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 48px;
+      line-height: 600px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    section.section.parallax-1 {
+      background-image: url("1.jpeg");
+    }
+
+    section.section.parallax-2 {
+      background-image: url("2.jpeg");
+    }
+
+    section.section.parallax-3 {
+      background-image: url("3.jpg");
+    }
+
+    @media all and (min-width: 600px) {
+      section.section h2 {
+        font-size: 42px;
+      }
+
+      section.section p {
+        font-size: 20px;
+      }
+
+      section.section.parallax h1 {
+        font-size: 96px;
+      }
+    }
+
+    @media all and (min-width: 960px) {
+      section.section.parallax h1 {
+        font-size: 160px;
+      }
+    }
+
+    .row {
+      padding: 0;
+    }
+
+    .card {
+
+
+      float: right;
+      
+      
+      -webkit-transition: transform .30s linear;
+      -moz-transition: transform .30s linear;
+      -o-transition: transform .30s linear;
+      transition: transform .30s linear;
+
+
+    }
+    .card:hover{
+            transform:rotate(360deg);
+        }
+
+        .card img:hover{
+            clip-path: circle(75% at 50% 50%);
+            -webkit-clip-path:circle(75% at 50% 50%);
+        }
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">回到首页</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#">纪念相册 <span
+            class="sr-only">(current)</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="nav-link"
+          href="p3.html">蹭饭图</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="nav-link"
+          href="p1.html">彩蛋</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </div>
+    </div>
+  </nav>
+  <section class="section parallax parallax-1">
+    <div class="container">
+      <h1 size="6">童鞋们Hi！</h1>
+    </div>
+  </section>
+  <div class="section1">
+    <section class="section content">
+      <div class="container" style="padding: 0;">
+        <div class="container marketing" background: -webkit-linear-gradient(rgb(202, 209, 252), rgb(243, 94, 94))
+          style="padding-left: 100px;">
+
+          <!-- Three columns of text below the carousel -->
+          <div class="row" style="padding-top:50px;">
+            <div class="col-lg-4">
+              <img class="phy" src="物理李老师.jpg" height="200px" width="200px">
+
+
+
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="phy" src="生物卿老师.jpg" height="200px" width="200px">
+              <br><br><br><br><br>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="phy" src="化学苏老师.jpg" height="200px" width="200px">
+
+
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="phy" src="数学郭老师.jpg" height="200px" width="200px">
+
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="phy" src="语文张老师.jpg" height="200px" width="200px">
+
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="phy" src="英语谭老师.JPG" height="200px" width="200px">
+
+
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="section parallax parallax-2">
+    <div class="container">
+      <h1></h1>
+    </div>
+  </section>
+  <div class="section1">
+    <section class="section content">
+      <div class="container">
+        <div class="container" style="padding-top: 50px;">
+          <div class="row row-cols-2">
+            <div class="col">
+              <div class="card" style="width: 30rem;">
+                <img src="IMG_1685.JPG" class="card-img-top" alt="...">
+                <div class="card-body" style="padding: 0;">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 30rem;">
+                <img src="IMG_1686.JPG" class="card-img-top" alt="...">
+                <div class="card-body" style="padding: 0;">
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="section parallax parallax-3">
+      <div class="container">
+        <h1></h1>
+      </div>
+    </section>
+    <div class="section1">
+      <section class="section content">
+        <div class="container">
+          <div class="container" style="padding-top: 50px;">
+            <div class="row row-cols-2">
+              <div class="col">
+                <div class="card" style="width: 30rem;">
+                  <img src="IMG_1689.JPG" class="card-img-top" alt="...">
+                  <div class="card-body" style="padding: 0;">
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 30rem;">
+                  <img src="IMG_1687.JPG" height="318px" width="286px" class="card-img-top" alt="...">
+                  <div class="card-body" style="padding: 0;">
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="section parallax parallax-1">
+        <div class="container">
+          <h1></h1>
+        </div>
+      </section>
+      <div class="section1">
+        <section class="section content">
+          <div class="container">
+            <div class="container" style="padding-top: 50px;">
+              <div class="row row-cols-2">
+                <div class="col">
+                  <div class="card" style="width: 30rem;">
+                    <img src="IMG_1698.JPG" class="card-img-top" alt="...">
+                    <div class="card-body" style="padding: 0;">
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 30rem;">
+                    <img src="IMG_1699.JPG" class="card-img-top" alt="...">
+                    <div class="card-body" style="padding: 0;">
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+
+
+</body>
+
+</html>
